@@ -85,25 +85,21 @@ class SideloadDaemonState : public DaemonStateInterface,
       // Split the progress bar in two parts for the two stages DOWNLOADING and
       // FINALIZING.
       ReportStatus(base::StringPrintf("ui_print "));
-      ReportStatus(base::StringPrintf("ui_print --------------------------------------"));
-      ReportStatus(base::StringPrintf("ui_print    Thank you for flashing Candy!   "));
-      ReportStatus(base::StringPrintf("ui_print --------------------------------------"));
+      ReportStatus(base::StringPrintf("ui_print -------------------------------------==-"));
+      ReportStatus(base::StringPrintf("ui_print .            Taste the Sweetness!™  "));
+      ReportStatus(base::StringPrintf("ui_print ."));
+      ReportStatus(base::StringPrintf("ui_print .  ####   ##   ##  ## #####  ##   ##   ##   ##  "));
+      ReportStatus(base::StringPrintf("ui_print . ##     ####  ### ## ##  ##  ## ##   ###  ###  "));
+      ReportStatus(base::StringPrintf("ui_print . ##    ##  ## ###### ##  ##   ##      ##   ##  "));
+      ReportStatus(base::StringPrintf("ui_print . ##    ###### ## ### ##  ##   ##      ##   ##  "));
+      ReportStatus(base::StringPrintf("ui_print	.  #### ##  ## ##  ## #####    ##     #### #### "));
+      ReportStatus(base::StringPrintf("ui_print ."));
+      ReportStatus(base::StringPrintf("ui_print .            BASED ON ANDROID 11"));
+      ReportStatus(base::StringPrintf("ui_print ----------------------------------------"));
+      ReportStatus(base::StringPrintf("ui_print ."));
+      ReportStatus(base::StringPrintf("ui_print -            Thanks for flashing!   "));
       ReportStatus(base::StringPrintf("ui_print "));
-      ReportStatus(base::StringPrintf("ui_print "));
-      ReportStatus(base::StringPrintf("ui_print   ####   ##   ##  ## #####  ##   ##  "));
-      ReportStatus(base::StringPrintf("ui_print  ##     ####  ### ## ##  ##  ## ##   "));
-      ReportStatus(base::StringPrintf("ui_print  ##    ##  ## ###### ##  ##   ##     "));
-      ReportStatus(base::StringPrintf("ui_print  ##    ###### ## ### ##  ##   ##     "));
-      ReportStatus(base::StringPrintf("ui_print	  #### ##  ## ##  ## #####    ##     "));
-      ReportStatus(base::StringPrintf("ui_print "));
-      ReportStatus(base::StringPrintf("ui_print "));
-      ReportStatus(base::StringPrintf("ui_print --------------------------------------"));
-      ReportStatus(base::StringPrintf("ui_print    CANDY 11. BASED ON ANDROID 11     "));
-      ReportStatus(base::StringPrintf("ui_print        Taste the Sweetness!        "));
-      ReportStatus(base::StringPrintf("ui_print --------------------------------------"));
-      ReportStatus(base::StringPrintf("ui_print "));
-      ReportStatus(base::StringPrintf(
-           "ui_print Step %d/3", status == UpdateStatus::VERIFYING ? 2 : 3));
+      ReportStatus(base::StringPrintf("ui_print Step %d/3", status == UpdateStatus::VERIFYING ? 2 : 3));
       ReportStatus(base::StringPrintf("progress 0.6 0"));
      }
 
